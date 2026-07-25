@@ -145,15 +145,16 @@
   <header>
     <span class="badge">🕵️ Undercover</span>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Effective date: July 16, 2026</p>
+    <p class="subtitle">Effective date: July 25, 2026</p>
   </header>
 
   <div class="summary-card">
     <h2>The short version</h2>
     <ul>
-      <li><strong>Undercover works entirely offline.</strong> Nothing you enter or capture in the app is sent anywhere.</li>
+      <li><strong>Your gameplay data stays on your device.</strong> Player names, photos, word decks, and game progress are never sent anywhere.</li>
       <li>Player names, optional player photos, word decks, and game progress are stored <strong>only on your device.</strong></li>
-      <li>The app contains <strong>no ads, no analytics, no trackers, and no third-party data-sharing SDKs.</strong></li>
+      <li>The app is free to play, funded by <strong>optional rewarded video ads</strong> (Google AdMob) you choose to watch in exchange for in-app coins that start a game or round.</li>
+      <li>Serving and measuring those ads involves a third-party SDK (Google AdMob) that can access advertising identifiers, subject to the consent choices described in Section 4.</li>
       <li>Uninstalling the app deletes all of its local data.</li>
     </ul>
   </div>
@@ -161,10 +162,11 @@
   <section>
     <h2>1. Who this policy covers</h2>
     <p>
-      Undercover ("the app", "we", "our") is a local, pass-and-play party game for Android, iOS,
-      and other supported platforms. This policy explains what information the app accesses on
-      your device, how it is used, and your choices — because the app does not have a server or
-      backend, there is no "our systems" to describe beyond your own device.
+      Undercover ("the app", "we", "our") is a pass-and-play party game for Android, iOS, and
+      other supported platforms. This policy explains what information the app accesses on your
+      device, how it is used, what a third-party advertising SDK accesses on our behalf, and your
+      choices. The app itself has no server or backend of its own — the only outside party
+      involved is Google, through the AdMob SDK described in Section 4.
     </p>
   </section>
 
@@ -196,6 +198,11 @@
           <td>Lets you resume a game if the app is closed or the device restarts (round, roles, scores, etc.).</td>
           <td>Local device preferences storage; overwritten each time you progress, cleared when you end the game.</td>
         </tr>
+        <tr>
+          <td>Coin balance</td>
+          <td>Tracks coins earned by watching rewarded ads and spent starting games/rounds.</td>
+          <td>Local device preferences storage; persists across app restarts, reset only by uninstalling.</td>
+        </tr>
       </tbody>
     </table>
   </section>
@@ -219,46 +226,88 @@
           <td>Photo / storage access</td>
           <td>Needed on some older Android versions to save and reload the photo you captured for a dossier card.</td>
         </tr>
+        <tr>
+          <td>Internet / network state</td>
+          <td>Needed to request, load, and display rewarded ads, and to show the ad-consent form. The app makes no other network connections — your gameplay data never uses this.</td>
+        </tr>
+        <tr>
+          <td>App Tracking Transparency prompt (iOS 14.5+)</td>
+          <td>Shown once so you can allow or deny the advertising identifier being used to personalize ads. Denying it means you'll still see ads, just less targeted ones.</td>
+        </tr>
       </tbody>
     </table>
     <p class="muted">You can grant or revoke any of these permissions at any time from your device's system settings. Denying camera access simply means you won't be able to add a player photo — every other feature keeps working.</p>
   </section>
 
   <section>
-    <h2>4. What we don't do</h2>
+    <h2>4. Advertising &amp; third-party SDKs</h2>
+    <p>
+      Undercover is free and funded by optional rewarded video ads instead of a purchase price or
+      an account/subscription. Watching a rewarded ad to completion earns one in-app coin, and
+      each game or round costs one coin to start — you always have the choice to watch an ad or
+      not; nothing about your gameplay requires it beyond that coin cost.
+    </p>
+    <p>
+      Ads are served by <strong>Google AdMob</strong>, a third-party advertising SDK we embed but
+      don't control. To request, deliver, and measure ads, Google's SDK can access and process:
+    </p>
+    <ul>
+      <li>Your device's advertising identifier (Android Advertising ID, or Apple's IDFA on iOS, only if you grant App Tracking Transparency permission).</li>
+      <li>Coarse technical/usage signals related to ad requests and impressions (e.g. ad performance, general device information).</li>
+    </ul>
+    <p>
+      None of this ad-related data is collected, stored, or seen by us directly — it is handled
+      entirely inside Google's SDK under Google's own privacy policy, available at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+      Where required (for example, EEA/UK users), Google's User Messaging Platform shows a consent
+      form on first launch asking how your data may be used for ads; you can change that choice at
+      any time from the app's Settings screen via the "Privacy Options" link (shown only where
+      applicable). On iOS, the system App Tracking Transparency prompt additionally governs
+      whether your advertising identifier can be used at all.
+    </p>
+    <p>
+      Aside from AdMob, the app uses no other third-party SDKs, analytics, or crash-reporting
+      services, and none of your player names, photos, word decks, or game state is ever sent to
+      Google or anyone else — that data stays local as described in Section 2.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. What we don't do</h2>
     <ul>
       <li>We don't require an account, sign-in, or email address to use the app.</li>
-      <li>We don't collect analytics, crash reports, or usage statistics.</li>
-      <li>We don't show ads or use ad networks.</li>
-      <li>We don't use cookies, device identifiers, or any tracking technology.</li>
-      <li>We don't sell, rent, or share your data — there is no data on our end to share.</li>
+      <li>We don't collect analytics, crash reports, or usage statistics of our own.</li>
+      <li>We don't sell, rent, or share your gameplay data — there is no gameplay data on our end to share.</li>
+      <li>We don't send player names, photos, word decks, or game state anywhere — see Section 4 for what our ad SDK accesses instead.</li>
       <li>We don't access your location, contacts, or microphone.</li>
     </ul>
   </section>
 
   <section>
-    <h2>5. Children's privacy</h2>
+    <h2>6. Children's privacy</h2>
     <p>
-      Undercover does not knowingly collect personal information from anyone, including children,
-      because no information ever leaves the device. Parents and guardians can review or delete all
-      locally stored data at any time by uninstalling the app.
+      Undercover does not knowingly collect personal information from anyone, including children —
+      no gameplay information ever leaves the device, and rewarded ads are requested and displayed
+      through Google AdMob under Google's own child-directed treatment settings and policies.
+      Parents and guardians can review or delete all locally stored data at any time by
+      uninstalling the app.
     </p>
   </section>
 
   <section>
-    <h2>6. Data retention &amp; deletion</h2>
+    <h2>7. Data retention &amp; deletion</h2>
     <p>
       Local data persists on your device only for as long as the app is installed. You can remove it at any time by:
     </p>
     <ul>
-      <li>Uninstalling the app (removes all stored names, photos, decks, and game state), or</li>
+      <li>Uninstalling the app (removes all stored names, photos, decks, coin balance, and game state), or</li>
       <li>Using your device's app-storage/clear-data option, or</li>
       <li>Deleting individual custom word decks or player photos from within the app.</li>
     </ul>
   </section>
 
   <section>
-    <h2>7. Security</h2>
+    <h2>8. Security</h2>
     <p>
       Because all data stays within your device's app-sandboxed storage, it is protected by your
       operating system's standard app-sandboxing and, where enabled, device-level encryption. As
@@ -267,17 +316,17 @@
   </section>
 
   <section>
-    <h2>8. Changes to this policy</h2>
+    <h2>9. Changes to this policy</h2>
     <p>
-      If Undercover's data practices change in the future (for example, if an optional online
-      feature is added), this policy will be updated and the effective date above will change
-      accordingly. Continued use of the app after an update constitutes acceptance of the revised
-      policy.
+      If Undercover's data practices change in the future (for example, if a new online feature or
+      third-party SDK is added), this policy will be updated and the effective date above will
+      change accordingly. Continued use of the app after an update constitutes acceptance of the
+      revised policy.
     </p>
   </section>
 
   <section>
-    <h2>9. Contact us</h2>
+    <h2>10. Contact us</h2>
     <p>
       Questions about this policy or the app's data practices can be sent to
       <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.
@@ -285,10 +334,11 @@
   </section>
 
   <footer>
-    Undercover is a local, offline party game. This policy describes the app's actual behavior as
-    implemented; it is provided as a starting point and has not been reviewed by a lawyer — consider
-    a legal review before publishing to an app store, especially if you add any network, analytics,
-    or advertising features later.
+    Undercover is a pass-and-play party game whose only data collection beyond your own device
+    happens inside the embedded Google AdMob SDK, as described in Section 4. This policy describes
+    the app's actual behavior as implemented; it is provided as a starting point and has not been
+    reviewed by a lawyer — consider a legal review before publishing to an app store, especially if
+    you add further network, analytics, or advertising features later.
   </footer>
 
 </div>
