@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JustSayIt — Privacy Policy</title>
+<style>
+  :root {
+    --primary: #000000;
+    --bg: #FFFFFF;
+    --card: #FFFFFF;
+    --text: #000000;
+    --text-muted: #555555;
+    --border: #CCCCCC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #FFFFFF;
+      --bg: #000000;
+      --card: #000000;
+      --text: #FFFFFF;
+      --text-muted: #AAAAAA;
+      --border: #444444;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 32px 0 40px;
+  }
+  .summary-card h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+  }
+  .summary-card ul {
+    margin: 12px 0 0;
+    padding-left: 20px;
+  }
+  .summary-card li {
+    margin-bottom: 8px;
+  }
+  .summary-card li::marker {
+    color: var(--text);
+  }
+  section {
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  p, li {
+    color: var(--text);
+  }
+  .muted {
+    color: var(--text-muted);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--card);
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+  a { color: var(--text); }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="badge">🗣️ JustSayIt</span>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Effective date: July 28, 2026</p>
+  </header>
+
+  <div class="summary-card">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Your gameplay data stays on your device.</strong> Player names, game settings, and coin balance are never sent anywhere.</li>
+      <li>The question bank ships built into the app — nothing about play requires a network connection.</li>
+      <li>The app is free to play, funded by <strong>optional rewarded video ads</strong> (Google AdMob) you choose to watch in exchange for in-app coins that start a game session.</li>
+      <li>Serving and measuring those ads involves a third-party SDK (Google AdMob) that can access advertising identifiers, subject to the consent choices described in Section 4.</li>
+      <li>One category of questions ("Extreme") contains mature, relationship-themed content and is gated behind a one-time 18+ confirmation — see Section 6.</li>
+      <li>Uninstalling the app deletes all of its local data.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>1. Who this policy covers</h2>
+    <p>
+      JustSayIt ("the app", "we", "our") is a pass-and-play ice-breaker card game for Android and
+      iOS. Players draw a card, read the question aloud, and answer it or take a penalty. This
+      policy explains what information the app accesses on your device, what a third-party
+      advertising SDK accesses on our behalf, and your choices. The app itself has no server or
+      backend of its own — the only outside party involved is Google, through the AdMob SDK
+      described in Section 4.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Information the app accesses</h2>
+    <p>Everything below is created by you during play and stored locally on your device. None of it is transmitted to us or to any third party, because the app makes no network connections of its own.</p>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Why it's collected</th><th>Where it's stored</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Player names (optional)</td>
+          <td>Displayed during play so it's clear whose turn it is. Entering names is optional — players without one are just labeled "Player 1", "Player 2", etc.</td>
+          <td>Kept in memory for the current session only; not written to persistent storage and cleared when the session ends.</td>
+        </tr>
+        <tr>
+          <td>Game setup preferences</td>
+          <td>Your last-used category selection, free-rejection allowance, and chosen penalty, remembered so you don't have to reconfigure every launch.</td>
+          <td>Local device preferences storage on your device only.</td>
+        </tr>
+        <tr>
+          <td>18+ content confirmation</td>
+          <td>Whether you've already confirmed you're 18+ to unlock the Extreme question category, so the confirmation prompt isn't shown again every session.</td>
+          <td>Local device preferences storage on your device only.</td>
+        </tr>
+        <tr>
+          <td>Coin balance</td>
+          <td>Tracks coins earned by watching rewarded ads and spent starting game sessions.</td>
+          <td>Local device preferences storage; persists across app restarts, reset only by uninstalling.</td>
+        </tr>
+        <tr>
+          <td>Question bank</td>
+          <td>The built-in set of ice-breaker questions used during play.</td>
+          <td>Bundled with the app install itself — this is app content, not user data, and never changes based on anything you do.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Device permissions we ask for</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Internet / network state</td>
+          <td>Needed to request, load, and display rewarded and interstitial ads, and to show the ad-consent form. The app makes no other network connections — your gameplay data never uses this.</td>
+        </tr>
+        <tr>
+          <td>App Tracking Transparency prompt (iOS 14.5+)</td>
+          <td>Shown once so you can allow or deny the advertising identifier being used to personalize ads. Denying it means you'll still see ads, just less targeted ones.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">You can grant or revoke either of these at any time from your device's system settings. The app has no other permission requirements — it never asks for camera, microphone, location, or contacts access.</p>
+  </section>
+
+  <section>
+    <h2>4. Advertising &amp; third-party SDKs</h2>
+    <p>
+      JustSayIt is free and funded by optional rewarded video ads instead of a purchase price or
+      an account/subscription. Watching a rewarded ad to completion earns one in-app coin, and
+      each game session costs one coin to start — you always have the choice to watch an ad or
+      not; nothing about your gameplay requires it beyond that coin cost. Separately, occasional
+      full-screen interstitial ads appear roughly every 5–7 card draws during play; these are not
+      tied to coins and don't require any action from you beyond dismissing them.
+    </p>
+    <p>
+      Ads are served by <strong>Google AdMob</strong>, a third-party advertising SDK we embed but
+      don't control. To request, deliver, and measure ads, Google's SDK can access and process:
+    </p>
+    <ul>
+      <li>Your device's advertising identifier (Android Advertising ID, or Apple's IDFA on iOS, only if you grant App Tracking Transparency permission).</li>
+      <li>Coarse technical/usage signals related to ad requests and impressions (e.g. ad performance, general device information).</li>
+    </ul>
+    <p>
+      None of this ad-related data is collected, stored, or seen by us directly — it is handled
+      entirely inside Google's SDK under Google's own privacy policy, available at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+      Where required (for example, EEA/UK users), Google's User Messaging Platform shows a consent
+      form on first launch asking how your data may be used for ads; you can change that choice at
+      any time from the app's main menu via the "Privacy Options" link (shown only where
+      applicable). On iOS, the system App Tracking Transparency prompt additionally governs
+      whether your advertising identifier can be used at all.
+    </p>
+    <p>
+      Aside from AdMob, the app uses no other third-party SDKs, analytics, or crash-reporting
+      services, and none of your player names, settings, or coin balance is ever sent to Google or
+      anyone else — that data stays local as described in Section 2.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. What we don't do</h2>
+    <ul>
+      <li>We don't require an account, sign-in, or email address to use the app.</li>
+      <li>We don't collect analytics, crash reports, or usage statistics of our own.</li>
+      <li>We don't sell, rent, or share your gameplay data — there is no gameplay data on our end to share.</li>
+      <li>We don't send player names, settings, or coin balance anywhere — see Section 4 for what our ad SDK accesses instead.</li>
+      <li>We don't access your location, contacts, camera, or microphone.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Mature content &amp; age gate</h2>
+    <p>
+      JustSayIt's questions are organized into three categories. Two ("Easy" and "Medium-Hard")
+      are general-audience ice-breaker and conversation questions. The third ("Extreme") includes
+      flirty, relationship-themed, and difficult hypothetical questions written to be suggestive
+      rather than graphic or explicit, in the style of mainstream 18+ party card games. The first
+      time a player selects the Extreme category, the app shows a one-time confirmation screen
+      requiring you to affirm you are 18 or older before that category becomes available; this
+      choice is remembered on-device as described in Section 2 so it isn't asked again. The app as
+      a whole is intended for a general audience, but the Extreme category specifically is not
+      intended for anyone under 18.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Data retention &amp; deletion</h2>
+    <p>
+      Local data persists on your device only for as long as the app is installed. You can remove it at any time by:
+    </p>
+    <ul>
+      <li>Uninstalling the app (removes all stored settings, 18+ confirmation, and coin balance), or</li>
+      <li>Using your device's app-storage/clear-data option.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Security</h2>
+    <p>
+      Because all data stays within your device's app-sandboxed storage, it is protected by your
+      operating system's standard app-sandboxing and, where enabled, device-level encryption. As
+      with any app, we recommend keeping your device's OS up to date and using a device passcode.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Changes to this policy</h2>
+    <p>
+      If JustSayIt's data practices change in the future (for example, if a new online feature or
+      third-party SDK is added), this policy will be updated and the effective date above will
+      change accordingly. Continued use of the app after an update constitutes acceptance of the
+      revised policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Contact us</h2>
+    <p>
+      Questions about this policy or the app's data practices can be sent to
+      <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    JustSayIt is a pass-and-play party game whose only data collection beyond your own device
+    happens inside the embedded Google AdMob SDK, as described in Section 4. This policy describes
+    the app's actual behavior as implemented; it is provided as a starting point and has not been
+    reviewed by a lawyer — consider a legal review before publishing to an app store, especially if
+    you add further network, analytics, or advertising features later.
+  </footer>
+
+</div>
+</body>
+</html>
