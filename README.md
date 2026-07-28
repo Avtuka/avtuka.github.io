@@ -15,6 +15,9 @@ Each app has its own folder or HTML file with a public GitHub Pages link to use 
 - **Undercover**
   - [Privacy Policy (View)](https://avtuka.github.io/Undercover/privacy-policy.html)
 
+- **JustSayIt**
+  - [Privacy Policy (View)](https://avtuka.github.io/JustSayIt/privacy-policy.html)
+
 ## 📬 Contact
 
 For any questions, please contact us at avtukalaz@gmail.com.
