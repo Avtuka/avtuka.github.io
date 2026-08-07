@@ -1,0 +1,17 @@
+---
+interface Props {
+  icon: string;
+  name: string;
+  description: string;
+  policyHref: string;
+}
+const { icon, name, description, policyHref } = Astro.props;
+---
+<li class="card app-card">
+  <span class="app-icon">{icon}</span>
+  <h2>{name}</h2>
+  <p>{description}</p>
+  <div class="app-links">
+    <a class="pill-link" href={policyHref}>Privacy Policy →</a>
+  </div>
+</li>

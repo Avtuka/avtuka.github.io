@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AppCard from '../components/AppCard.astro';
+
+const apps = [
+  {
+    icon: '🎭',
+    name: 'Mafia Anchor',
+    description: 'A fun party-style game for Android users.',
+    policyHref: '/Mafia-Anchor/privacy-policy.html',
+  },
+  {
+    icon: '🃏',
+    name: 'Joker',
+    description: 'A casual card-game scoresheet designed for a fun and simple experience.',
+    policyHref: '/Joker/privacy-policy.html',
+  },
+  {
+    icon: '🕵️',
+    name: 'Undercover',
+    description: 'A local, offline, pass-and-play party game.',
+    policyHref: '/Undercover/privacy-policy.html',
+  },
+  {
+    icon: '🗣️',
+    name: 'JustSayIt',
+    description: 'A pass-and-play ice-breaker party game — draw a card, answer or take the penalty.',
+    policyHref: '/JustSayIt/privacy-policy.html',
+  },
+];
+---
+<Layout
+  title="Avtandigital — Apps & Privacy Policies"
+  description="Avtandigital mobile apps and their privacy policies."
+  active="home"
+>
+  <Fragment slot="head">
+    <meta name="google-site-verification" content="ZyxJxXCIdKHsqzEQgFTtwHoTuct3BbQp02Gyojb2_DQ" />
+  </Fragment>
+
+  <div class="page-header">
+    <span class="badge">📱 Avtandigital</span>
+    <h1>Apps &amp; Privacy Policies</h1>
+    <p class="subtitle">Mobile apps published by Avtandigital, and their privacy policies.</p>
+  </div>
+
+  <ul class="apps">
+    {apps.map((app) => <AppCard {...app} />)}
+  </ul>
+</Layout>

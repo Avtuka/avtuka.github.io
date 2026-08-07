@@ -1,0 +1,18 @@
+---
+interface Props {
+  active?: 'home' | 'support';
+}
+const { active } = Astro.props;
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      {active === 'support'
+        ? <a href="/">Apps &amp; Privacy Policies</a>
+        : <a href="/support.html">Support</a>}
+      <span>·</span>
+      <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>
+    </div>
+    &copy; {new Date().getFullYear()} Avtandigital. All rights reserved.
+  </div>
+</footer>

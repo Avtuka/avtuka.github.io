@@ -1,0 +1,15 @@
+---
+interface Props {
+  active?: 'home' | 'support';
+}
+const { active } = Astro.props;
+---
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">Avtandigital<span class="dot">.</span></a>
+    <nav class="site-nav">
+      <a href="/" aria-current={active === 'home' ? 'page' : undefined}>Apps</a>
+      <a href="/support.html" aria-current={active === 'support' ? 'page' : undefined}>Support</a>
+    </nav>
+  </div>
+</header>
