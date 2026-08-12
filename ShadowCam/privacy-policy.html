@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShadowCam — Privacy Policy</title>
+<style>
+  :root {
+    --primary: #000000;
+    --bg: #FFFFFF;
+    --card: #FFFFFF;
+    --text: #000000;
+    --text-muted: #555555;
+    --border: #CCCCCC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #FFFFFF;
+      --bg: #000000;
+      --card: #000000;
+      --text: #FFFFFF;
+      --text-muted: #AAAAAA;
+      --border: #444444;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 32px 0 40px;
+  }
+  .summary-card h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+  }
+  .summary-card ul {
+    margin: 12px 0 0;
+    padding-left: 20px;
+  }
+  .summary-card li {
+    margin-bottom: 8px;
+  }
+  .summary-card li::marker {
+    color: var(--text);
+  }
+  section {
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  p, li {
+    color: var(--text);
+  }
+  .muted {
+    color: var(--text-muted);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--card);
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+  a { color: var(--text); }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="badge">🎥 ShadowCam</span>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Effective date: August 12, 2026</p>
+  </header>
+
+  <div class="summary-card">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Your recordings never leave your device.</strong> Video and audio are encrypted as they are captured and are never uploaded to us or to anyone else.</li>
+      <li>The encryption key lives in your device's secure hardware and cannot be exported — <strong>uninstalling the app or resetting the phone destroys every recording permanently</strong>, with no recovery path.</li>
+      <li>A notification stays visible the entire time the camera is active, and it is how you stop a recording.</li>
+      <li>The app is free. Watching a recording in the app is always free and works offline; <strong>saving a decrypted copy to your device's gallery takes one rewarded video ad</strong> (Google AdMob).</li>
+      <li>Serving those ads involves a third-party SDK (Google AdMob) that accesses advertising identifiers and related signals, as described in Section 4.</li>
+      <li><strong>Recording people without their knowledge is illegal in many places.</strong> Complying with the law where you are is your responsibility — see Section 9.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>1. Who this policy covers</h2>
+    <p>
+      ShadowCam ("the app", "we", "our") is an Android app that records video in the background and
+      stores it encrypted on your device. This policy explains what information the app accesses on
+      your device, how it is used, what a third-party advertising SDK accesses on our behalf, and
+      your choices. The app has no server or backend of its own — the only outside party involved is
+      Google, through the AdMob SDK described in Section 4.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Information the app accesses</h2>
+    <p>
+      Everything below is created by you when you record, and stays on your device. None of it is
+      transmitted to us or to any third party — the app makes no network connections other than the
+      ad requests described in Section 4, and those never carry your recordings or anything about them.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Why it's accessed</th><th>Where it's stored</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Video you record</td>
+          <td>The core function of the app.</td>
+          <td>Encrypted as it is captured, into app-private storage on your device. Unencrypted video is never written to disk except when you deliberately export a copy (see Section 7).</td>
+        </tr>
+        <tr>
+          <td>Audio you record (optional)</td>
+          <td>Captured alongside video only when you enable "Record audio" and grant microphone access.</td>
+          <td>Encrypted into the same file as the video. Turning the setting off, or denying the microphone permission, records video only.</td>
+        </tr>
+        <tr>
+          <td>Thumbnail still</td>
+          <td>One small still image per recording so the in-app list has something to show.</td>
+          <td>Encrypted separately in app-private storage, with the same key as the recording.</td>
+        </tr>
+        <tr>
+          <td>Recording details</td>
+          <td>Creation time, duration, dimensions, whether audio was captured, and whether you have exported it — used to list and play your recordings.</td>
+          <td>A local database on your device. See Section 8 for a note on this database.</td>
+        </tr>
+        <tr>
+          <td>Capture settings</td>
+          <td>Your chosen camera, quality, and whether audio is recorded.</td>
+          <td>Local device preferences storage.</td>
+        </tr>
+        <tr>
+          <td>Earned saves</td>
+          <td>A count of saves you have paid for by watching a rewarded ad but not yet used.</td>
+          <td>Local device preferences storage; persists across restarts, cleared by uninstalling.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Device permissions we ask for</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Camera</td>
+          <td>To record video. This is the app's core function and it cannot work without it.</td>
+        </tr>
+        <tr>
+          <td>Microphone</td>
+          <td>Only used when you have enabled "Record audio". Deny it, or leave the setting off, and the app records video only.</td>
+        </tr>
+        <tr>
+          <td>Notifications</td>
+          <td>Required, and not optional. Android mandates a visible indicator whenever an app uses the camera in the background, and that notification is also your stop control — it cannot be dismissed while the camera is live.</td>
+        </tr>
+        <tr>
+          <td>Foreground service (camera &amp; microphone)</td>
+          <td>Lets recording continue when the screen is off or the app has been closed, which is the point of the app.</td>
+        </tr>
+        <tr>
+          <td>Prevent device from sleeping</td>
+          <td>Keeps the encoder running for the duration of a recording so a session doesn't silently stop when the device dozes.</td>
+        </tr>
+        <tr>
+          <td>Internet / network state</td>
+          <td>Used only to request and display rewarded ads. Recording, playback, encryption, and deleting all work with no connection at all.</td>
+        </tr>
+        <tr>
+          <td>Advertising ID</td>
+          <td>Used by the Google AdMob SDK to request and measure ads — see Section 4.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">
+      You can grant or revoke any of these from your device's system settings. Revoking camera access
+      stops the app from recording; revoking notifications prevents recording from starting at all,
+      because Android will not allow a background camera session without a visible indicator.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Advertising &amp; third-party SDKs</h2>
+    <p>
+      ShadowCam is free and funded by optional rewarded video ads instead of a purchase price or a
+      subscription. Ads gate exactly one thing: <strong>saving a decrypted copy of a recording out to
+      your device's gallery.</strong> Watching a rewarded ad to completion earns one save. Playing a
+      recording inside the app is always free, works offline, and never involves an ad — your own
+      footage is never held behind one.
+    </p>
+    <p>
+      Ads are served by <strong>Google AdMob</strong>, a third-party advertising SDK we embed but
+      don't control. To request, deliver, and measure ads, Google's SDK can access and process:
+    </p>
+    <ul>
+      <li>Device and advertising identifiers, including the Android Advertising ID.</li>
+      <li>An approximate location derived from your IP address — the app itself requests no location permission and has no access to your precise location.</li>
+      <li>Interaction signals relating to ad requests and impressions.</li>
+      <li>Diagnostic and performance information about ad delivery.</li>
+    </ul>
+    <p>
+      Google collects this data and processes it as a third party for advertising, analytics, and
+      fraud prevention. None of it is collected, stored, or seen by us directly — it is handled
+      inside Google's SDK under Google's own privacy policy, available at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+      Data sent by the SDK is transmitted over a secure connection.
+    </p>
+    <p>
+      You can limit how this identifier is used at any time from your device's system settings, under
+      <em>Settings → Privacy → Ads</em>, where Android lets you reset your advertising ID or delete it
+      entirely. Deleting it means you will still see ads, just less targeted ones.
+    </p>
+    <p>
+      Aside from AdMob, the app uses no other third-party SDKs, no analytics, and no crash-reporting
+      service. <strong>Your recordings, audio, thumbnails, and recording details are never sent to
+      Google or to anyone else</strong> — that data stays on your device as described in Section 2.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. What we don't do</h2>
+    <ul>
+      <li>We don't require an account, sign-in, or email address to use the app.</li>
+      <li>We don't operate a server, so there is nowhere for your recordings to be uploaded to.</li>
+      <li>We don't collect analytics, crash reports, or usage statistics of our own.</li>
+      <li>We don't sell, rent, or share your recordings — we have never had access to them.</li>
+      <li>We don't request location, contacts, or access to your existing photos and videos.</li>
+      <li>We don't include an in-app browser or load remote content beyond the ads described in Section 4.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Children's privacy</h2>
+    <p>
+      ShadowCam is intended for adults and is distributed to an audience of 18 and over. It is not
+      directed to children, and we do not knowingly collect personal information from anyone —
+      no recording ever leaves the device. Rewarded ads are requested and displayed through Google
+      AdMob under Google's own policies.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Data retention &amp; deletion</h2>
+    <p>
+      Everything the app stores lives on your device only, for as long as the app is installed. You can remove it at any time by:
+    </p>
+    <ul>
+      <li>Deleting an individual recording from the in-app gallery, which removes both the encrypted file and its entry, or</li>
+      <li>Using your device's app-storage / clear-data option, or</li>
+      <li>Uninstalling the app, which removes every recording, thumbnail, setting, and earned save.</li>
+    </ul>
+    <p>
+      <strong>Deletion is irreversible.</strong> Because the encryption key is bound to your device and
+      is never backed up or exported, uninstalling the app or resetting the device destroys every
+      recording permanently. There is no cloud copy and no recovery path — this is deliberate, and it
+      is disclosed in the app before you record anything.
+    </p>
+    <p>
+      We hold no account and no server-side data about you, so there is nothing for you to request
+      deletion of from us and no process for doing so — the controls above are the complete set.
+      If you export a copy of a recording to your device's gallery, that copy is an ordinary
+      unencrypted video file that lives outside the app; managing or deleting it is up to you, using
+      your gallery or file manager.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Security</h2>
+    <p>
+      Recordings are encrypted as they are captured, not encrypted afterwards, so unencrypted video is
+      never written to storage during a recording. The app uses an AES-256 data key to encrypt the
+      stream, and that key is itself wrapped by an AES-256 key held in the Android Keystore —
+      hardware-backed, and stored in a secure element where the device provides one. That key cannot
+      be exported off the device. Each recording's ciphertext is additionally bound to its own
+      identity, so swapping encrypted files on disk causes decryption to fail rather than silently
+      serve the wrong video. Automatic backup is disabled for the app, so none of this is copied to
+      the cloud.
+    </p>
+    <p>
+      Two limitations are worth stating plainly rather than leaving you to assume otherwise:
+    </p>
+    <ul>
+      <li>
+        The database of recording details described in Section 2 — creation times, durations, and file
+        names — is <strong>not</strong> encrypted. Someone with root access to your device, or with a
+        device backup extraction, could learn that recordings exist and when they were made, though
+        not what they contain.
+      </li>
+      <li>
+        A recording you export to your gallery is an ordinary, unencrypted video file from that moment
+        on, readable by any app with access to your media. Exporting is the one action that takes a
+        recording out from behind the app's encryption, and it only ever happens when you ask for it.
+      </li>
+    </ul>
+    <p>
+      As with any app, we recommend keeping your device's operating system up to date and using a
+      device passcode, since device-level encryption and the secure hardware this app relies on are
+      strongest when a passcode is set.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Recording responsibly</h2>
+    <p>
+      Recording people without their knowledge or consent is illegal in many jurisdictions, and
+      two-party consent laws apply across much of the United States and Europe. ShadowCam gives you a
+      tool; it does not give you permission. <strong>You are solely responsible for complying with the
+      laws that apply where you are</strong>, including any rules about recording in private spaces, in
+      workplaces, or of people who have not agreed to it. This is stated in the app before you record
+      anything, and downloading or using the app does not transfer that responsibility to us.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Changes to this policy</h2>
+    <p>
+      If ShadowCam's data practices change in the future — for example, if a new online feature,
+      analytics service, or additional third-party SDK is added — this policy will be updated and the
+      effective date above will change accordingly. Continued use of the app after an update
+      constitutes acceptance of the revised policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Contact us</h2>
+    <p>
+      Questions about this policy or the app's data practices can be sent to
+      <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    ShadowCam records and encrypts video entirely on your device; its only data collection beyond
+    that device happens inside the embedded Google AdMob SDK, as described in Section 4. This policy
+    describes the app's actual behavior as implemented; it is provided as a starting point and has
+    not been reviewed by a lawyer — consider a legal review before publishing to an app store,
+    especially given the recording-consent obligations described in Section 9.
+  </footer>
+
+</div>
+</body>
+</html>

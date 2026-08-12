@@ -18,6 +18,9 @@ Each app has its own folder or HTML file with a public GitHub Pages link to use 
 - **JustSayIt**
   - [Privacy Policy (View)](https://avtuka.github.io/JustSayIt/privacy-policy.html)
 
+- **ShadowCam**
+  - [Privacy Policy (View)](https://avtuka.github.io/ShadowCam/privacy-policy.html)
+
 ## 📬 Contact
 
 For any questions, please contact us at avtukalaz@gmail.com.
