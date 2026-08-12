@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout
   title="Avtandigital — Support"
-  description="Support and contact information for Avtandigital mobile apps: Mafia Anchor, Joker, and Undercover."
+  description="Support and contact information for Avtandigital mobile apps: Mafia Anchor, Joker, Undercover, JustSayIt, and ShadowCam."
   active="support"
 >
   <div class="page-header">
@@ -61,6 +61,34 @@ import Layout from '../layouts/Layout.astro';
           <a class="pill-link" href="/Undercover/privacy-policy.html">Privacy Policy →</a>
         </div>
       </li>
+      <li class="card app-card">
+        <h3>JustSayIt</h3>
+        <ul>
+          <li>A pass-and-play ice-breaker party game — draw a card, answer or take the penalty.</li>
+          <li>No account or sign-in is required — nothing to reset or recover.</li>
+          <li>The question bank ships inside the app, so gameplay itself needs no internet connection.</li>
+          <li>Coins are earned by watching rewarded ads and spent starting a game session; your balance is stored locally and resets if you reinstall the app.</li>
+          <li>The "Extreme" category is 18+ and unlocks after a one-time age confirmation, which is remembered on your device.</li>
+          <li>EEA/UK/Switzerland users can review or change ad consent anytime via the "Privacy Options" link in the main menu.</li>
+        </ul>
+        <div class="app-links">
+          <a class="pill-link" href="/JustSayIt/privacy-policy.html">Privacy Policy →</a>
+        </div>
+      </li>
+      <li class="card app-card">
+        <h3>ShadowCam</h3>
+        <ul>
+          <li>Background video recording with on-device encryption — recordings never leave your phone.</li>
+          <li>No account or sign-in is required — there is no server and nothing is uploaded.</li>
+          <li>Notification permission is required, not optional: Android mandates a visible indicator while the camera runs in the background, and that notification is also how you stop a recording.</li>
+          <li>Recording, playback, and deleting all work offline. Saving a decrypted copy to your gallery costs one rewarded ad, which needs an internet connection.</li>
+          <li><strong>Deletion is permanent.</strong> The encryption key lives in your device's secure hardware and is never backed up, so uninstalling the app or resetting the phone destroys every recording with no recovery path.</li>
+          <li>Recording people without their knowledge is illegal in many places — complying with the law where you are is your responsibility.</li>
+        </ul>
+        <div class="app-links">
+          <a class="pill-link" href="/ShadowCam/privacy-policy.html">Privacy Policy →</a>
+        </div>
+      </li>
     </ul>
   </section>
 
@@ -68,7 +96,7 @@ import Layout from '../layouts/Layout.astro';
     <h2>Frequently asked questions</h2>
     <dl class="faq">
       <dt>How do I delete my data?</dt>
-      <dd>None of our apps require an account, so there's no server-side data to delete. All app data lives on your device — uninstalling the app or clearing its storage from your device settings removes everything.</dd>
+      <dd>None of our apps require an account, so there's no server-side data to delete. All app data lives on your device — uninstalling the app or clearing its storage from your device settings removes everything. For ShadowCam this is irreversible: its encryption key can't leave your device, so uninstalling destroys every recording permanently.</dd>
 
       <dt>An ad won't load — is something wrong?</dt>
       <dd>Ads are served by Google AdMob and depend on your internet connection and ad availability in your region. Try again in a few minutes, or check that you're connected to the internet.</dd>
@@ -80,7 +108,7 @@ import Layout from '../layouts/Layout.astro';
       <dd>Yes — we're happy to hear suggestions. Send them to <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.</dd>
 
       <dt>Do these apps work offline?</dt>
-      <dd>Undercover works fully offline. Mafia Anchor and Joker work offline for gameplay, but need an internet connection to show rewarded ads.</dd>
+      <dd>Undercover works fully offline. Mafia Anchor, Joker, and JustSayIt work offline for gameplay, but need an internet connection to show rewarded ads. ShadowCam records, plays back, and deletes offline — only saving a copy to your gallery needs a connection, since it's gated behind a rewarded ad.</dd>
     </dl>
   </section>
 </Layout>
