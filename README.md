@@ -2,24 +2,28 @@
 
 This repository contains the privacy policies for mobile applications developed and published by **Avtandigital**.
 
-Each app has its own folder or HTML file with a public GitHub Pages link to use for app store compliance.
+The site is built with Astro and published at [avtandigital.com](https://avtandigital.com). Each app has a page
+under its own path, giving it a public link to use for app store compliance.
 
 ## 🔐 Available Policies
 
 - **Mafia Anchor**
-  - [Privacy Policy (View)](https://avtuka.github.io/Mafia-Anchor/privacy-policy.html)
+  - [Privacy Policy (View)](https://avtandigital.com/Mafia-Anchor/privacy-policy.html)
 
 - **Joker**
-  - [Privacy Policy (View)](https://avtuka.github.io/Joker/privacy-policy.html)
+  - [Privacy Policy (View)](https://avtandigital.com/Joker/privacy-policy.html)
 
 - **Undercover**
-  - [Privacy Policy (View)](https://avtuka.github.io/Undercover/privacy-policy.html)
+  - [Privacy Policy (View)](https://avtandigital.com/Undercover/privacy-policy.html)
 
 - **JustSayIt**
-  - [Privacy Policy (View)](https://avtuka.github.io/JustSayIt/privacy-policy.html)
+  - [Privacy Policy (View)](https://avtandigital.com/JustSayIt/privacy-policy.html)
 
 - **ShadowCam**
-  - [Privacy Policy (View)](https://avtuka.github.io/ShadowCam/privacy-policy.html)
+  - [Privacy Policy (View)](https://avtandigital.com/ShadowCam/privacy-policy.html)
+
+- **PassionPlay**
+  - [Privacy Policy (View)](https://avtandigital.com/PassionPlay/privacy-policy.html)
 
 ## 📬 Contact
 

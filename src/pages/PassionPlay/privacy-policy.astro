@@ -1,0 +1,227 @@
+---
+import PolicyLayout from '../../layouts/PolicyLayout.astro';
+---
+<PolicyLayout
+  appName="PassionPlay"
+  icon="🔥"
+  title="PassionPlay — Privacy Policy"
+  description="Effective date: August 13, 2026"
+>
+  <div class="card summary-card" slot="meta">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Your game stays on your device.</strong> Player names and progress are saved on your phone and are never sent to us or to anyone else.</li>
+      <li>The card decks ship inside the app — setting up and playing a game needs no internet connection at all.</li>
+      <li>The app is <strong>18+</strong> and opens only after a one-time age confirmation, which is remembered on your device.</li>
+      <li>The app is free, funded by full-screen ads (Google AdMob) that appear between cards every few draws.</li>
+      <li><strong>The app asks Google for non-personalized ads.</strong> Serving them still involves a third-party SDK that accesses advertising identifiers, as described in Section 4.</li>
+      <li>Uninstalling the app deletes everything it has stored.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who this policy covers</h2>
+  <p>
+    PassionPlay ("the app", "we", "our") is a pass-and-play card game for couples on Android and
+    iOS. Two or more players take turns drawing cards across three stages, passing one phone
+    between them. This policy explains what information the app stores on your device, what a
+    third-party advertising SDK accesses on our behalf, and your choices. The app has no server or
+    backend of its own — the only outside party involved is Google, through the AdMob SDK described
+    in Section 4.
+  </p>
+
+  <h2>2. Information the app accesses</h2>
+  <p>
+    Everything below is created by you when you set up and play a game, and is written to
+    app-private storage on your device. None of it is transmitted to us or to any third party — the
+    app itself makes no network connections whatsoever, and the only traffic it generates is the ad
+    requests described in Section 4, which carry nothing from this table.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why it's collected</th><th>Where it's stored</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Player names</td>
+        <td>Entered during setup and displayed during play so it's clear whose turn it is.</td>
+        <td>Saved on your device alongside the rest of the game, so you can close the app and resume the same session later.</td>
+      </tr>
+      <tr>
+        <td>Game progress</td>
+        <td>Which stage you're on, how far into it you are, the shuffled order of that stage's cards, and whose turn comes next — everything needed to resume where you left off.</td>
+        <td>The same local save as above. Cleared automatically when a game finishes, or when you discard it from the setup screen.</td>
+      </tr>
+      <tr>
+        <td>Language choice</td>
+        <td>Remembered so the app opens in the language you picked instead of asking on every launch.</td>
+        <td>Local device storage on your device only.</td>
+      </tr>
+      <tr>
+        <td>18+ confirmation</td>
+        <td>Whether you have already confirmed you are 18 or older, so the age screen isn't shown again every launch.</td>
+        <td>Local device storage on your device only.</td>
+      </tr>
+      <tr>
+        <td>Ad counter</td>
+        <td>A count of how many cards have been revealed since the last ad, used to decide when the next one appears.</td>
+        <td>Stored with the local game save; see Section 4.</td>
+      </tr>
+      <tr>
+        <td>Card decks and app text</td>
+        <td>The questions, dares, and interface wording in both supported languages.</td>
+        <td>Bundled into the app install itself — this is app content, not user data, and it never changes based on anything you do.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Device permissions we ask for</h2>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Internet</td>
+        <td>Used only to request and display ads. Setting up a game, drawing cards, resuming a saved game, and everything else the app does work with no connection at all.</td>
+      </tr>
+      <tr>
+        <td>Vibration</td>
+        <td>A brief haptic tap when a card is revealed.</td>
+      </tr>
+      <tr>
+        <td>Advertising ID</td>
+        <td>Accessed by the Google AdMob SDK to request and measure ads — see Section 4.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="muted">
+    You can grant or revoke these from your device's system settings. The app never asks for camera,
+    microphone, location, contacts, or access to your photos. Its Android build additionally declares
+    a screen-overlay permission and two legacy external-storage permissions that come from the React
+    Native framework the app is built on; PassionPlay never exercises them and reads or writes
+    nothing outside its own private storage.
+  </p>
+
+  <h2>4. Advertising &amp; third-party SDKs</h2>
+  <p>
+    PassionPlay is free and funded by advertising rather than a purchase price or a subscription.
+    Ads are full-screen interstitials shown between cards, roughly every five to eight card reveals.
+    They are not tied to any reward, coin, or currency, and dismissing one returns you straight to
+    the game — there is nothing in the app you can only unlock by watching an ad.
+  </p>
+  <p>
+    Ads are served by <strong>Google AdMob</strong>, a third-party advertising SDK we embed but
+    don't control. <strong>The app requests non-personalized ads only</strong>, which tells Google
+    not to use an advertising profile to target what you are shown. Even so, to request, deliver,
+    and measure ads at all, Google's SDK can access and process:
+  </p>
+  <ul>
+    <li>Your device's advertising identifier.</li>
+    <li>An approximate location derived from your IP address — the app itself requests no location permission and has no access to your precise location.</li>
+    <li>Signals relating to ad requests and impressions, and diagnostic information about ad delivery.</li>
+  </ul>
+  <p>
+    None of this ad-related data is collected, stored, or seen by us directly — it is handled
+    entirely inside Google's SDK under Google's own privacy policy, available at
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+  </p>
+  <p>
+    On Android, you can limit how this identifier is used at any time from your device's system
+    settings, under <em>Settings → Privacy → Ads</em>, where Android lets you reset your advertising
+    ID or delete it entirely. On iOS, the app does not ask for permission to track you, and iOS
+    withholds the advertising identifier from any app that has not asked — so no iOS advertising
+    identifier is available to the SDK.
+  </p>
+  <p>
+    Aside from AdMob, the app uses no other third-party SDKs, no analytics, and no crash-reporting
+    service. <strong>Your player names, game progress, language choice, and age confirmation are
+    never sent to Google or to anyone else</strong> — that data stays on your device as described in
+    Section 2.
+  </p>
+
+  <h2>5. What we don't do</h2>
+  <ul>
+    <li>We don't require an account, sign-in, or email address to use the app.</li>
+    <li>We don't operate a server, so there is nowhere for your game data to be uploaded to.</li>
+    <li>We don't collect analytics, crash reports, or usage statistics of our own.</li>
+    <li>We don't sell, rent, or share your player names or game progress — we have never had access to them.</li>
+    <li>We don't record which cards you answered and which you declined; nothing about how you play leaves the position needed to resume.</li>
+    <li>We don't request location, contacts, camera, microphone, or access to your photos.</li>
+    <li>We don't include an in-app browser or load remote content beyond the ads described in Section 4.</li>
+  </ul>
+
+  <h2>6. Mature content &amp; age gate</h2>
+  <p>
+    PassionPlay is an adult game intended only for players aged 18 or older. Its cards are arranged
+    into three stages — Hardtalk, Prelude, and Hardcore — each more explicit than the one before,
+    covering intimate questions and dares written for couples. Before the app can be used at all it
+    shows a one-time screen asking you to confirm you are 18 or older; answering that you are under
+    18 blocks access, and the confirmation is remembered on your device as described in Section 2 so
+    it isn't asked again.
+  </p>
+  <p>
+    Cards also display a penalty measured in shots, for players who would rather decline than answer.
+    The app enforces nothing and records nothing about this: declining any card is always allowed,
+    with or without drinking, and the app's own rules screen says so alongside a note on drinking
+    responsibly.
+  </p>
+
+  <h2>7. Data retention &amp; deletion</h2>
+  <p>
+    Everything the app stores lives on your device only, for as long as the app is installed. You can remove it at any time by:
+  </p>
+  <ul>
+    <li>Finishing a game, which clears that game's save automatically, or</li>
+    <li>Choosing "Start a new game" on the setup screen, which discards a game in progress after asking you to confirm, or</li>
+    <li>Using your device's app-storage / clear-data option, or</li>
+    <li>Uninstalling the app, which removes every saved game, your language choice, and your age confirmation.</li>
+  </ul>
+  <p>
+    We hold no account and no server-side data about you, so there is nothing for you to request
+    deletion of from us and no process for doing so — the controls above are the complete set.
+  </p>
+  <p>
+    One note specific to Android: the app allows the operating system's standard automatic backup, so
+    a saved game and your preferences may be included in a device backup held in your own Google
+    account, under your own Google settings. That backup belongs to you, not to us, and we have no
+    access to it.
+  </p>
+
+  <h2>8. Security</h2>
+  <p>
+    Because all data stays within your device's app-sandboxed storage, it is protected by your
+    operating system's standard app-sandboxing and, where enabled, device-level encryption. The app
+    stores no passwords, payment details, or contact information — the most sensitive thing it holds
+    is the player names you type in.
+  </p>
+  <p>
+    Worth stating plainly rather than leaving you to assume otherwise: the saved game is ordinary
+    unencrypted data inside the app's private storage. That is enough to keep it away from other apps
+    on the device, but someone with root access to your phone, or with an extracted device backup,
+    could read the player names and how far through a game you had gone. As with any app, we
+    recommend keeping your device's operating system up to date and using a device passcode.
+  </p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>
+    If PassionPlay's data practices change in the future — for example if a new online feature,
+    analytics service, or additional third-party SDK is added, or if the app begins asking for iOS
+    tracking permission — this policy will be updated and the effective date above will change
+    accordingly. Continued use of the app after an update constitutes acceptance of the revised
+    policy.
+  </p>
+
+  <h2>10. Contact us</h2>
+  <p>
+    Questions about this policy or the app's data practices can be sent to
+    <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.
+  </p>
+
+  <p class="muted" style="margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85rem;">
+    PassionPlay is a pass-and-play party game whose only data collection beyond your own device
+    happens inside the embedded Google AdMob SDK, as described in Section 4. This policy describes
+    the app's actual behavior as implemented; it is provided as a starting point and has not been
+    reviewed by a lawyer — consider a legal review before publishing to an app store, especially
+    given the adult content and the alcohol-related penalties described in Section 6.
+  </p>
+</PolicyLayout>
