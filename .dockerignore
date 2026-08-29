@@ -1,0 +1,15 @@
+# The build context is the repository root, so keep out anything the image
+# neither builds from nor ships.
+.git
+.gitignore
+.dockerignore
+
+node_modules
+dist
+.astro
+
+devops
+README.md
+
+.DS_Store
+Thumbs.db
