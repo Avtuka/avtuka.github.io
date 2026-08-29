@@ -86,7 +86,7 @@ import PolicyLayout from '../../layouts/PolicyLayout.astro';
       <tr>
         <td>Apple or Google subject identifier, and email if shared</td>
         <td>The only thing that says a sign-in on a new phone is the same person as before.</td>
-        <td>The email is erased the moment you delete your account. The identifier itself is kept on a permanently revoked record — see Section 9.</td>
+        <td>The email is erased the moment you delete your account; the identifier goes with the record thirty days later — see Section 9.</td>
       </tr>
       <tr>
         <td>Coin balance and the entries behind it</td>
@@ -224,17 +224,18 @@ import PolicyLayout from '../../layouts/PolicyLayout.astro';
     <li><strong>Any email address we hold is erased at once.</strong></li>
     <li>Your Apple or Google sign-in is marked permanently revoked, and the account can never be signed into again. Signing in afterwards with the same Apple or Google account creates a brand-new account with no connection to the old one.</li>
     <li>Every sign-in session is revoked, so any device still holding one is signed out.</li>
+    <li>Thirty days later the remaining stripped row is removed altogether, automatically.</li>
   </ul>
   <p>
-    <strong>Being straight about what survives.</strong> The revoked record still holds the opaque
-    identifier Apple or Google gave us — not your email, not your name, and not anything that can be
-    used to look you up outside this app. It is kept so that the same sign-in cannot silently be
-    matched back to a closed account. <strong>There is currently no automated job that later erases
-    that record</strong>; the anonymised row remains until it is removed by hand. We would rather say
-    so than describe a schedule that does not run.
+    <strong>Then, after thirty days, the record itself is removed.</strong> Deletion is deliberately
+    two steps: everything that identifies you goes the moment you press the button, and the stripped
+    row survives a month only so the coin ledger and the match history are not left pointing at
+    nothing while anyone might still be reading them. After that a scheduled job removes the row
+    outright, along with the opaque identifier Apple or Google gave us and every stored sign-in
+    session. Nothing is left that could be matched back to you.
   </p>
   <p>
-    Coin ledger entries and match history rows are also kept, in anonymised form, because they
+    Coin ledger entries and match history rows outlive even that, in anonymised form, because they
     reference each other: a ledger with holes in it cannot be audited, and a finished match that lost
     a player would misreport what the other three did. After deletion they carry no name and no email.
   </p>
