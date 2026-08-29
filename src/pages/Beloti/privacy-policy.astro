@@ -1,0 +1,299 @@
+---
+import PolicyLayout from '../../layouts/PolicyLayout.astro';
+---
+<PolicyLayout
+  appName="Beloti"
+  icon="♠️"
+  title="Beloti — Privacy Policy"
+  description="Effective date: August 30, 2026"
+>
+  <div class="card summary-card" slot="meta">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Beloti is an online game, so unlike our other apps it does have a server.</strong> Playing a hand means sending your moves to it, and your account lives there rather than on your phone.</li>
+      <li>The server is in <strong>Falkenstein, Germany</strong>. Nothing is stored outside the EU.</li>
+      <li><strong>You can play without giving us anything.</strong> A guest account needs no email, no name, and no sign-in — just tap start.</li>
+      <li>Signing in with Apple or Google gives us an identifier from them and, if you allow it, an email address. Apple's Hide My Email works normally, and we never see your password.</li>
+      <li>The app is free, funded by <strong>optional rewarded ads</strong> (Google AdMob) that you choose to watch for coins, as described in Section 6.</li>
+      <li><strong>You can have your account deleted by emailing us</strong> — your email address is erased, your name is replaced, and the account can never be signed into again. What survives, and why, is set out plainly in Section 9.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who this policy covers</h2>
+  <p>
+    Beloti ("the app", "we", "our") is an iOS and Android app for playing Beloti, the Georgian form
+    of Belote, against other people or against the game's own bots. Unlike the other apps on this
+    site, Beloti is not an offline app: four people play the same hand at the same time, so there
+    is a server between them, and it is ours. This policy explains what that server stores, what the
+    app stores on your device, what a third-party advertising SDK accesses on our behalf, and what
+    you can do about any of it.
+  </p>
+  <p>
+    The server runs on hardware we rent from Hetzner Online GmbH in <strong>Falkenstein, Saxony,
+    Germany</strong>. All account data, game history and coin balances are stored there and nowhere
+    else. The only other outside party involved is Google, through the AdMob SDK described in
+    Section 6.
+  </p>
+
+  <h2>2. Your account</h2>
+  <p>
+    There are two kinds of account, and the difference is what you have given us.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Kind</th><th>What it needs from you</th><th>What it is for</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Guest</td>
+        <td>Nothing. No email, no password, no sign-in. You may type a display name; if you don't, the game invents one.</td>
+        <td>Playing immediately. A guest account is a real account — it holds your coins and your match history — but it exists only on the device that created it.</td>
+      </tr>
+      <tr>
+        <td>Apple or Google</td>
+        <td>An identifier from Apple or Google that is unique to you <em>and to this app</em>, plus an email address if you allow one to be shared.</td>
+        <td>Keeping your account when you change phone. Signing in on a second device brings your coins and history with you.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>We never see your Apple or Google password</strong>, and we never receive a general-purpose
+    account identifier. Apple and Google give each app its own opaque subject identifier, so the one we
+    hold cannot be used to look you up anywhere else. If you use <em>Sign in with Apple</em> and choose
+    <em>Hide My Email</em>, we store the relay address Apple generates and never learn your real one.
+  </p>
+  <p>
+    If you start as a guest and later sign in, the app offers to join the two together. Doing so
+    closes the guest account and continues as the signed-in one; the closed account's row is kept
+    but can no longer be signed into.
+  </p>
+
+  <h2>3. Information we store on our server</h2>
+  <p>
+    This is the complete list. There is no analytics service, no advertising profile, and no
+    tracking of you across other apps or websites.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why it's collected</th><th>How long it's kept</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Display name</td>
+        <td>Shown to the three other people at your table so they know whose turn it is.</td>
+        <td>Until you delete your account. Replaced with an anonymous placeholder on deletion.</td>
+      </tr>
+      <tr>
+        <td>Apple or Google subject identifier, and email if shared</td>
+        <td>The only thing that says a sign-in on a new phone is the same person as before.</td>
+        <td>The email is erased the moment you delete your account. The identifier itself is kept on a permanently revoked record — see Section 9.</td>
+      </tr>
+      <tr>
+        <td>Coin balance and the entries behind it</td>
+        <td>Coins pay the entry fee for a match and are earned by watching ads. The ledger is append-only so a balance can always be explained.</td>
+        <td>Kept after deletion in anonymised form, because entries reference each other and a ledger with holes in it cannot be audited.</td>
+      </tr>
+      <tr>
+        <td>Match history — who played, the result, and a short code per hand</td>
+        <td>Showing you your own results, and settling "what actually happened in that hand". The code is a compact seed the game can replay rather than a stored copy of the cards.</td>
+        <td>Kept after deletion in anonymised form.</td>
+      </tr>
+      <tr>
+        <td>Reports you send about another player</td>
+        <td>Acting on abusive names and behaviour. A report records who sent it, who it names, the reason, the table, and that player's display name at the time.</td>
+        <td>Kept as a moderation record. This is the one place a name is retained after it changes.</td>
+      </tr>
+      <tr>
+        <td>Sign-in sessions</td>
+        <td>Keeping you signed in without asking again. Stored as a hash — the token itself is not stored on the server.</td>
+        <td>Until it expires, you sign out, or your account is deleted.</td>
+      </tr>
+      <tr>
+        <td>Account counters — matches finished, matches abandoned, whether the account is banned</td>
+        <td>Bans, and discouraging people from walking out of games other people have paid to play.</td>
+        <td>Until you delete your account.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="muted">
+    Your IP address is used, in the moment, to limit how fast requests can be made — a protection
+    against automated abuse. It is shortened first (an IPv4 address is reduced to its first three
+    numbers), it is held only in the server's memory, and it is discarded whenever the server
+    restarts. It is never written to our database and never associated with your account.
+  </p>
+
+  <h2>4. Information the app stores on your device</h2>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why it's stored</th><th>Where it's stored</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Your sign-in session</td>
+        <td>So the app does not ask you to sign in every time you open it.</td>
+        <td>The device's own secure storage — Keychain on iOS, the encrypted keystore on Android.</td>
+      </tr>
+      <tr>
+        <td>An installation identifier</td>
+        <td>A random value created by the app on first launch, used to spread the request limit fairly across devices. It is not an advertising identifier and it is not shared with anyone.</td>
+        <td>The same secure storage. Removed when you uninstall the app.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>5. Device permissions we ask for</h2>
+  <p>
+    Beloti asks for no runtime permissions at all. It does not request the camera, the microphone,
+    your location, your contacts, your photos, or your files, and it has no code that could use
+    them. The only capability it needs is network access, which is not a permission you are asked
+    to grant.
+  </p>
+
+  <h2>6. Advertising &amp; third-party SDKs</h2>
+  <p>
+    Beloti is free and funded by optional rewarded ads instead of a purchase price or a
+    subscription. Ads are never forced and never interrupt a hand: you choose to watch one, from
+    the lobby, in exchange for coins. If you would rather not, the game also gives coins when you
+    have too few to sit down, so <strong>you are never stuck at a screen whose only way forward is
+    an ad</strong>.
+  </p>
+  <p>
+    Ads are served by <strong>Google AdMob</strong>, a third-party advertising SDK we embed but
+    don't control. To request, deliver and measure ads, Google's SDK can access and process:
+  </p>
+  <ul>
+    <li>Device and advertising identifiers, such as the Android Advertising ID or Apple's identifier for advertisers.</li>
+    <li>An approximate location derived from your IP address — the app itself requests no location permission and has no access to your precise location.</li>
+    <li>Interaction signals relating to ad requests and impressions.</li>
+    <li>Diagnostic and performance information about ad delivery.</li>
+  </ul>
+  <p>
+    Google collects this data and processes it as a third party for advertising, analytics and
+    fraud prevention. None of it is collected, stored or seen by us — it is handled inside Google's
+    SDK under Google's own privacy policy, available at
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+  </p>
+  <p>
+    <strong>The app asks Google for non-personalised ads only.</strong> It does not show the iOS
+    App Tracking Transparency prompt, because it does not ask to track you across other companies'
+    apps and websites. You can further limit how the advertising identifier is used from your
+    device's system settings at any time — on iOS under <em>Settings → Privacy &amp; Security →
+    Tracking</em>, and on Android under <em>Settings → Privacy → Ads</em>. Doing so does not stop
+    ads; it makes them less targeted.
+  </p>
+  <p>
+    Nothing about your account, your cards, your coins or your opponents is sent to Google. Aside
+    from AdMob, and from Apple or Google when you choose to sign in with them, the app uses no
+    third-party SDKs, no analytics and no crash-reporting service.
+  </p>
+
+  <h2>7. What we don't do</h2>
+  <ul>
+    <li>We don't require an account to play — a guest needs no email address and no sign-in.</li>
+    <li>We don't ask for your real name, your date of birth, your phone number or your address.</li>
+    <li>We don't collect analytics, crash reports or usage statistics of our own.</li>
+    <li>We don't sell, rent or share your personal information with anyone.</li>
+    <li>We don't track you across other apps or websites, and we don't build an advertising profile of you.</li>
+    <li>We don't have chat or any other way to send free-form messages to other players, so there is no message content to store. The only things you can say at a table are a fixed set of emoji.</li>
+    <li>We don't take payments. Coins have no monetary value, cannot be bought, and cannot be exchanged for anything outside the game.</li>
+    <li>We don't store your Apple or Google password, and we never receive one.</li>
+  </ul>
+
+  <h2>8. Your choices and rights</h2>
+  <p>
+    Because the server is in Germany, European data-protection rules apply to it regardless of where
+    you are, and we extend the same handling to everyone.
+  </p>
+  <ul>
+    <li><strong>Play without giving us anything.</strong> A guest account collects no identifying information at all.</li>
+    <li><strong>Change your display name</strong> from the lobby, once every 24 hours.</li>
+    <li><strong>Keep your email private.</strong> Sharing one with us is optional at sign-in, and Apple's Hide My Email is supported.</li>
+    <li><strong>Delete your account</strong> by emailing us. What that does is described in Section 9.</li>
+    <li><strong>Ask us what we hold about you</strong>, ask for it to be corrected, or ask for a copy, by emailing the address in Section 13. Section 3 is the complete list, so there is nothing held back from it.</li>
+  </ul>
+
+  <h2>9. Data retention &amp; deletion</h2>
+  <p>
+    To delete your account, email us at the address in Section 13 from a device that is signed in,
+    or tell us the player code shown in the app. <span class="muted">A button inside the app that
+    does this for you is being built and this section will be updated when it ships; today the
+    request is handled by hand, which is why it goes through email.</span> Once it is carried out:
+  </p>
+  <ul>
+    <li>Your display name is replaced with an anonymous placeholder.</li>
+    <li><strong>Any email address we hold is erased at once.</strong></li>
+    <li>Your Apple or Google sign-in is marked permanently revoked, and the account can never be signed into again. Signing in afterwards with the same Apple or Google account creates a brand-new account with no connection to the old one.</li>
+    <li>Every sign-in session is revoked, so any device still holding one is signed out.</li>
+  </ul>
+  <p>
+    <strong>Being straight about what survives.</strong> The revoked record still holds the opaque
+    identifier Apple or Google gave us — not your email, not your name, and not anything that can be
+    used to look you up outside this app. It is kept so that the same sign-in cannot silently be
+    matched back to a closed account. <strong>There is currently no automated job that later erases
+    that record</strong>; the anonymised row remains until it is removed by hand. We would rather say
+    so than describe a schedule that does not run.
+  </p>
+  <p>
+    Coin ledger entries and match history rows are also kept, in anonymised form, because they
+    reference each other: a ledger with holes in it cannot be audited, and a finished match that lost
+    a player would misreport what the other three did. After deletion they carry no name and no email.
+  </p>
+  <p>
+    Reports about another player are kept as moderation records, including the reported display name
+    as it was at the time. This is deliberate: a report that only stored a name would be useless
+    the moment the person changed it.
+  </p>
+  <p>
+    Uninstalling the app removes your session and the installation identifier from the device, but
+    it does not delete your account — for that, ask us. If you uninstall while playing as a guest,
+    the account simply becomes unreachable rather than deleted, because a guest has no way to sign
+    in from anywhere else.
+  </p>
+
+  <h2>10. Security</h2>
+  <p>
+    All traffic between the app and the server runs over HTTPS. Your session is held in the device's
+    own secure storage — the Keychain on iOS and the encrypted keystore on Android — rather
+    than in ordinary app storage. Sign-in tokens are signed, short-lived, and refreshed with a
+    separate long-lived token that is stored on the server only as a hash; presenting a refresh
+    token twice is treated as theft and revokes the whole session family.
+  </p>
+  <p>
+    <strong>What we do not claim:</strong> the database itself is not encrypted at rest beyond the
+    disk encryption of the machine it runs on, and there is currently no off-site backup of it. We
+    say so plainly rather than implying more than is there.
+  </p>
+
+  <h2>11. Children's privacy</h2>
+  <p>
+    Beloti is a card game intended for a general audience and is not directed at young children. We
+    do not knowingly collect personal information from a child, and the game asks for none: a guest
+    account requires nothing at all, and the only personal information any account can hold is what
+    Apple or Google passes on when somebody chooses to sign in. If you believe a child has created
+    an account with an email address attached, contact us at the address in Section 13 and we will
+    delete it.
+  </p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>
+    If Beloti's data practices change — for example, if a new online feature, an analytics service,
+    or an additional third-party SDK is added — this policy will be updated and the effective date
+    above will change accordingly. Continued use of the app after an update constitutes acceptance
+    of the revised policy.
+  </p>
+
+  <h2>13. Contact us</h2>
+  <p>
+    Questions about this policy, requests about your data, or anything else about the app can be
+    sent to <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.
+  </p>
+
+  <p class="muted" style="margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85rem;">
+    Beloti is an online game with accounts and a server in Germany, which makes it the only app on
+    this site that stores personal data away from your device; its advertising data collection
+    happens inside the embedded Google AdMob SDK, as described in Section 6. This policy describes
+    the app's actual behavior as implemented; it is provided as a starting point and has not been
+    reviewed by a lawyer — consider a legal review before publishing to an app store, especially
+    given that the server holds account data in the EU and the game uses a virtual currency.
+  </p>
+</PolicyLayout>

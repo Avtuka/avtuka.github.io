@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout
   title="Avtandigital — Support"
-  description="Support and contact information for Avtandigital mobile apps: Mafia Anchor, Joker, Undercover, JustSayIt, ShadowCam, and PassionPlay."
+  description="Support and contact information for Avtandigital mobile apps: Mafia Anchor, Joker, Undercover, JustSayIt, ShadowCam, PassionPlay, and Beloti."
   active="support"
 >
   <div class="page-header">
@@ -103,6 +103,22 @@ import Layout from '../layouts/Layout.astro';
           <a class="pill-link" href="/PassionPlay/privacy-policy.html">Privacy Policy →</a>
         </div>
       </li>
+
+      <li class="card app-card">
+        <h3>Beloti</h3>
+        <ul>
+          <li>Online four-player Georgian Beloti, played with friends or against bots. Unlike our other apps it needs an internet connection to play at all — four people share the same hand.</li>
+          <li>You can play as a guest with no email, no password and no sign-in. Signing in with Apple or Google is optional and exists so your account survives changing phone.</li>
+          <li>A guest account lives only on the device that made it — sign in before you switch phones, or you will start again from scratch.</li>
+          <li>Coins pay the entry fee for a match and are earned by watching an optional ad. If you cannot afford a match the game tops you up, so you are never stuck behind an ad.</li>
+          <li>Losing connection mid-match does not cost you your seat: it is held for a minute while a bot plays for you, and rejoining puts you straight back in it.</li>
+          <li>To change your display name, tap it in the lobby. Names can be changed once every 24 hours.</li>
+          <li>To delete your account, email us — the privacy policy sets out exactly what is erased and what is kept.</li>
+        </ul>
+        <div class="app-links">
+          <a class="pill-link" href="/Beloti/privacy-policy.html">Privacy Policy →</a>
+        </div>
+      </li>
     </ul>
   </section>
 
@@ -110,7 +126,7 @@ import Layout from '../layouts/Layout.astro';
     <h2>Frequently asked questions</h2>
     <dl class="faq">
       <dt>How do I delete my data?</dt>
-      <dd>None of our apps require an account, so there's no server-side data to delete. All app data lives on your device — uninstalling the app or clearing its storage from your device settings removes everything. For ShadowCam this is irreversible: its encryption key can't leave your device, so uninstalling destroys every recording permanently.</dd>
+      <dd>For every app except Beloti there's no server-side data to delete — none of them require an account, and all app data lives on your device, so uninstalling the app or clearing its storage removes everything. For ShadowCam this is irreversible: its encryption key can't leave your device, so uninstalling destroys every recording permanently. <strong>Beloti is the exception</strong>: it's an online game with an account on our server, so uninstalling it does not delete anything. Email us to have that account deleted — its <a href="/Beloti/privacy-policy.html">privacy policy</a> sets out exactly what is erased and what is kept.</dd>
 
       <dt>An ad won't load — is something wrong?</dt>
       <dd>Ads are served by Google AdMob and depend on your internet connection and ad availability in your region. Try again in a few minutes, or check that you're connected to the internet.</dd>
@@ -122,7 +138,7 @@ import Layout from '../layouts/Layout.astro';
       <dd>Yes — we're happy to hear suggestions. Send them to <a href="mailto:avtukalaz@gmail.com">avtukalaz@gmail.com</a>.</dd>
 
       <dt>Do these apps work offline?</dt>
-      <dd>Undercover works fully offline. Mafia Anchor, Joker, JustSayIt, and PassionPlay work offline for gameplay, but need an internet connection to show ads. ShadowCam records, plays back, and deletes offline — only saving a copy to your gallery needs a connection, since it's gated behind a rewarded ad.</dd>
+      <dd>Undercover works fully offline. Mafia Anchor, Joker, JustSayIt, and PassionPlay work offline for gameplay, but need an internet connection to show ads. ShadowCam records, plays back, and deletes offline — only saving a copy to your gallery needs a connection, since it's gated behind a rewarded ad. <strong>Beloti does not work offline at all</strong>: it's an online game, and the other three players are real people or bots on our server.</dd>
     </dl>
   </section>
 </Layout>

@@ -25,6 +25,9 @@ under its own path, giving it a public link to use for app store compliance.
 - **PassionPlay**
   - [Privacy Policy (View)](https://avtandigital.com/PassionPlay/privacy-policy.html)
 
+- **Beloti**
+  - [Privacy Policy (View)](https://avtandigital.com/Beloti/privacy-policy.html)
+
 ## 📬 Contact
 
 For any questions, please contact us at avtukalaz@gmail.com.
