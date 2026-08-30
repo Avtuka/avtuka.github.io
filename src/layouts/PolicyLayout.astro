@@ -6,14 +6,19 @@ interface Props {
   icon: string;
   title: string;
   description: string;
+  /**
+   * The <h1>. Defaults to "Privacy Policy" so every existing page is unchanged; Beloti's
+   * terms of service is the first thing here that is not a privacy policy.
+   */
+  heading?: string;
 }
 
-const { appName, icon, title, description } = Astro.props;
+const { appName, icon, title, description, heading = 'Privacy Policy' } = Astro.props;
 ---
 <Layout title={title} description={description}>
   <div class="page-header">
     <span class="badge">{icon} {appName}</span>
-    <h1>Privacy Policy</h1>
+    <h1>{heading}</h1>
     <p class="subtitle">{description}</p>
   </div>
 

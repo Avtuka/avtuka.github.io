@@ -4,8 +4,10 @@ interface Props {
   name: string;
   description: string;
   policyHref: string;
+  /** Only Beloti has terms so far, so this is optional and the other cards are unchanged. */
+  termsHref?: string;
 }
-const { icon, name, description, policyHref } = Astro.props;
+const { icon, name, description, policyHref, termsHref } = Astro.props;
 ---
 <li class="card app-card">
   <span class="app-icon">{icon}</span>
@@ -13,5 +15,6 @@ const { icon, name, description, policyHref } = Astro.props;
   <p>{description}</p>
   <div class="app-links">
     <a class="pill-link" href={policyHref}>Privacy Policy →</a>
+    {termsHref && <a class="pill-link" href={termsHref}>Terms of Service →</a>}
   </div>
 </li>
