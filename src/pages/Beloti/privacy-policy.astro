@@ -5,7 +5,7 @@ import PolicyLayout from '../../layouts/PolicyLayout.astro';
   appName="Beloti"
   icon="♠️"
   title="Beloti — Privacy Policy"
-  description="Effective date: August 30, 2026"
+  description="Effective date: September 21, 2026"
 >
   <div class="card summary-card" slot="meta">
     <h2>The short version</h2>
@@ -137,6 +137,11 @@ import PolicyLayout from '../../layouts/PolicyLayout.astro';
         <td>An installation identifier</td>
         <td>A random value created by the app on first launch, used to spread the request limit fairly across devices. It is not an advertising identifier and it is not shared with anyone.</td>
         <td>The same secure storage. Removed when you uninstall the app.</td>
+      </tr>
+      <tr>
+        <td>Your guest key</td>
+        <td>Only if you play as a guest: a random key our server gives the app, so that signing out and starting again brings back the same guest account — its coins and history — instead of a new one. Our server keeps only a one-way hash of it, and erases that the moment you delete your account.</td>
+        <td>The same secure storage. Kept when you sign out; removed when you uninstall the app.</td>
       </tr>
     </tbody>
   </table>
