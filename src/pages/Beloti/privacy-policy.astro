@@ -140,7 +140,7 @@ import PolicyLayout from '../../layouts/PolicyLayout.astro';
       </tr>
       <tr>
         <td>Your guest key</td>
-        <td>Only if you play as a guest: a random key our server gives the app, so that signing out and starting again brings back the same guest account — its coins and history — instead of a new one. Our server keeps only a one-way hash of it, and erases that the moment you delete your account.</td>
+        <td>Only if you play as a guest: a random key our server gives the app, so that signing out and starting again brings back the same guest account — its coins and history — instead of a new one. Our server keeps only a one-way hash of it, which also stops the same phone collecting the new-player coins twice. The hash is kept with your account's record and removed with it — for a deleted account, thirty days later (see Section 9).</td>
         <td>The same secure storage. Kept when you sign out; removed when you uninstall the app.</td>
       </tr>
     </tbody>
